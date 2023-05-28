@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Sorts+Mill+Goudy&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #F8F6F4;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	text-align: center;
+}
+  
+.main-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+}
+
+h1{
+  text-align: center;
+	font-size: 32px;
+}
+
+.fa-arrow-right{
+	font-size: 15px;
+}
+
+.form-container{
+	text-align: center;
+}
+
+form{
+	display: inline-flex;
+	align-items: center;
+	align-content: center;
+}
+
+form input{
+	background-color: #F8F6F4;
+	padding: 1em;
+	border-color: #000;
+	border-style: solid;
+	width: 500px;
+	outline: none;
+}
+
+#btn-submit-url{
+	color: #fff;
+	background-color:#000;;
+	cursor: pointer;
+	padding: 1em;
+	border-color: #000;;
+	border-style: solid;
+}
+
+footer{
+	text-align: center;
+	color: #b8b8b8;
+}
+
+footer a {
+	text-decoration: none;
+  color: #b8b8b8;
+}
+
+.fa-github-alt{
+	margin-left: 0.2em;
+}
+
+@media (max-width: 800px){
+	.banner{
+		margin: 14em auto 3em;
+		text-align: center;
+	}
+
+	.banner h1{
+		font-size:30px;
+	}
+
+	form{
+		display: inline-block;
+	}
+
+	#btn-submit-url{
+		display: block;
+		margin: 1em auto;
+		width: 100%;
+	}
+
+	form input{
+		max-width: 300px;
+	}
+  
+	.main-container{
+		min-height: 350px;
+	}
+}

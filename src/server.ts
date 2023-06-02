@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 
 const app = express();
 
-const urlencodedParser = bodyParser.urlencoded({ extended: false })
+const urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 app.engine('handlebars', engine());
 
@@ -50,6 +50,7 @@ const browse = async (url: string) => {
   await page.goto(url);
   const html = await page.content();
   await browser.close();
+  
   return html;
 };
 

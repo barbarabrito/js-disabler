@@ -12,16 +12,16 @@
   "author": "Bárbara M A Brito",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "express": "^4.18.2",
-    "express-handlebars": "^7.0.7",
-    "puppeteer": "^20.5.0",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.0",
+    "express-handlebars": "^6.0.5",
+    "puppeteer": "^15.5.0",
     "ts-node": "^10.9.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^20.2.5",
-    "typescript": "^5.0.4"
+    "typescript": "^3.0.4"
   },
   "include": [
     "./src/**/*.ts"

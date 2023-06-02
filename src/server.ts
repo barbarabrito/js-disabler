@@ -35,7 +35,7 @@ app.post('/submitUrl', urlencodedParser, function (req: Request, res: Response) 
 
 const browse = async (url: string) => {
 
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: "new" });
   const page = await browser.newPage();
   await page.setRequestInterception(true);
 

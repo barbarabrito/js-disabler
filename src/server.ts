@@ -3,6 +3,7 @@ import { Request, Response } from 'express';
 import puppeteer from 'puppeteer';
 import { engine } from 'express-handlebars';
 import bodyParser from 'body-parser';
+import * as cheerio from 'cheerio';
 
 const app = express();
 
@@ -50,6 +51,10 @@ const browse = async (url: string) => {
   await page.goto(url);
   const html = await page.content();
   await browser.close();
+  
+  const $ = cheerio.load(html);
+
+  $("detecta-adblock").remove();
   
   return html;
 };
